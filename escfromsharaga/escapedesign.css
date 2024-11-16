@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "newfont";
+    src: url("fonts/vcrosdmonorusbyd.ttf");
+}
+* {
+    font-family: "newfont";
+    src: url("fonts/vcrosdmonorusbyd.ttf") format("truetype");
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 1200px;
+	margin: 0 auto;
+    position: relative;
+}
+
+body {
+	background-image: url("pic/backup.jpg");
+    background-size: cover;
+    z-index: -9999;
+    margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #395778;
+    border-left: 12px solid #5c748d;
+    border-right: 12px solid #5c748d;
+}
+
+footer {
+    background-color: #395778;
+    border-left: 12px solid #5c748d;
+    border-right: 12px solid #5c748d;
+    height: 200px;
+}
+
+footer #menu>a {
+    display: flex;
+    min-height: 50px;
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    margin-top: 15px;
+}
+
+#menu {
+    display: flex;
+    min-height: 50px;
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu>a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+	padding: 0px 80px;
+}
+
+#menu a:hover,
+#menu a.active {
+	font-weight: bold;
+}
+
+main {
+    display: flex;
+    background-color: #6a839d;
+    justify-content: center;
+    flex-direction:  column;
+    border-bottom: 12px solid #5c748d;
+    border-left: 12px solid #5c748d;
+    border-right: 12px solid #5c748d;
+}
+
+main ul {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#blackBorder {
+    border-top: 12px solid #5c748d;
+}
+
+.bigText {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3, h2, h1, p, li {
+    color: white;
+}
+
+#downloadBtn {
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(0, 78, 0);
+    background-color: rgb(1, 136, 1);
+    padding: 25px 45px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+main h3, main h2, main h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+main h3 {
+    font-size: 30px;
+}
+
+main h2 {
+    font-size: 27px;
+}
+
+main h1 {
+    font-size: 25px;
+}
+
+main p {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 600px;
+}
+
+#requirements p {
+    text-align: left;
+    justify-content: left;
+    font-size: 20px;
+    width: 600px;
+}
+
+#roboZone {
+    height: 150px;
+}
+
+#knopka {
+    left: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    image-rendering: -moz-crisp-edges; 
+    -ms-interpolation-mode: nearest-neighbor; 
+    image-rendering: crisp-edges;
+    transform: scaleX(1);
+    transition: transform 0.2s;
+
+}
+#knopka:hover {
+    transform: scale(1.5);
+}
+
+#screenshotPanel {
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+#screenshotPanel .gallery {
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+#screenshotPanel .gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+#screenshotPanel::-webkit-scrollbar {
+    display: none;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+#controls #leftBtn, #controls #rightBtn {
+    width: 25px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+
+#robot:hover {
+    transform: scale(1.2); 
+}
+@keyframes jump {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 20px;
+    }
+}
+
+#robot {
+    left: 0;
+    position: relative;
+    width: 150px;
+    height: 100px;
+    image-rendering: -moz-crisp-edges; 
+    -ms-interpolation-mode: nearest-neighbor; 
+    image-rendering: crisp-edges;
+    transform: scaleX(1);
+    animation: jump 0.5s ease-in-out infinite;
+}
+
+#content {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+    text-align: center;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#playButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#playButton:hover {
+    background-color: #45a049;
+}
+
+body {
+    overflow: hidden; 
+}
+
+#descriptionScreenshot {
+    text-align: center;
+    padding: 50px;
+}
