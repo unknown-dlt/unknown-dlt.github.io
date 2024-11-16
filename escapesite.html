@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Escape from sharaga</title>
+        <link rel="stylesheet" href="escapedesign.css">
+        <link rel="shortcut icon" href="pic/icon.jpg" />
+    </head>
+
+    <body>
+
+        <div id="content">
+            <h1>Escape from sharaga</h1>
+        </div>
+    
+        <div id="overlay">
+            <button id="playButton">Начние свое приключение!</button>
+        </div>
+    
+        <audio id="backgroundMusic" src="sound/dupstep.mp3" type="audio/mp3" preload="auto"></audio>
+
+        <header class="wrapper">
+            <nav id="menu">
+                <a href="#info">Описание</a>
+                <a href="#screen">Скриншоты</a>
+                <a href="#download">Скачать</a>
+            </nav>
+        </header>
+
+        <main class="wrapper">
+            <img src="pic/picture.png"></img>
+
+            <div id="blackBorder"></div>
+
+            <h3><a name="info">Описание</a></h3>
+
+            <p><span class="bigText">Escape from sharaga</span> - это уникальная RPG новелла где вам предстоит погрузиться в жизнь одного из трех студентов и сбежать из шараги. Наши герои уже устали от постоянной рутины и бесконечных NPC, они хотят лишь одного... свободы! В нашем интерактивном мире вы возьмете на себя роль студента, который устал от однообразия учебной жизни и решает изменить свою судьбу. Исследуйте таинственные уголки колледжа, проходите увлекательные квесты, и встречайте уникальных персонажей, каждый из которых может помешать сбыться вашей цели... </p>
+            <p>сбежать из шараги</p>
+            
+            <h2>Управление</h2>
+
+            <ul>
+                <li><span class="bigText">W, A, S, D</span> - Передвижение</li>
+                <li><span class="bigText">E</span> - Взаимодействие</li>
+                <li><span class="bigText">Space</span> - Пропустить диалог</li>
+            </ul>
+
+            <h3><a name="screen">Персонажи</a></h3>
+
+            <div id="controls">
+                <img src="pic/strelkal.png" alt="left" id="leftBtn"></img>
+                
+                <div id="screenshotPanel">
+                    <div class="gallery">
+                        <img src="pic/npc1.png"></img>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="pic/npc2.png"></img>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="pic/npc3.png"></img>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="pic/npc4.png"></img>
+                    </div>
+                </div>    
+
+                <img src="pic/strelkar.png" alt="right" id="rightBtn"></img>
+            </div>
+
+            <p><span id="descriptionScreenshot"></span></p>
+
+            <h3><a id="downloadBtn" name="download" href="CatGlitch.zip" download>Играть</a></h3>
+            <h2>Системные требования:</h2>
+            <h1>Windows</h1>
+
+            <div id="requirements">
+                <p><span class="bigText">ОС:</span> Windows 10 64bit</p>
+                <p><span class="bigText">Процессор:</span> x64 architecture with SSE2 instruction set support</p>
+                <p><span class="bigText">Оперативная память:</span> 1 GB ОЗУ</p>
+                <p><span class="bigText">Видеокарта:</span> DX11, DX12 capable</p>
+                <p><span class="bigText">Место на диске:</span> 50 MB</p>
+            </div>
+
+            <div id="roboZone"></div>
+
+            <img id="robot" src="pic/guard.png"></img>
+
+        </main>
+
+        <footer class="wrapper">
+            <img src="pic/foot.jpg"></img>
+
+            <nav id="menu">
+                <a href="https://t.me/ilkamilol"><img id="knopka" src="pic/tg.png" class="hover-image-scale"></img></a>
+                <a href="https://www.donationalerts.com/r/ilkami"><img id="knopka" src="pic/donate.png"></img class="hover-image-scale"></a>
+                <a href="https://discord.com/invite/ENBRy6x3Na"><img id="knopka" src="pic/ds.png" class="hover-image-scale"></img></a>
+            </nav>
+        </footer>
+
+        <script src="scrpt.js"></script>
+    </body>
+</html>
